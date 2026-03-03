@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Explorer</title>
+    <!-- رابط ملف CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainContainer">
+        <!-- قسم البحث الرئيسي -->
+        <div id="searchSection">
+            <h2>🔬 Periodic Table Explorer</h2>
+            <div class="search-section">
+                <p>Enter the symbol of an element from the periodic table:</p>
+                <div class="search-box">
+                    <input type="text" id="elementInput" placeholder="e.g., H, Na, Fe" maxlength="3">
+                    <button onclick="searchElement()">🔍 Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم عرض النتائج -->
+        <div id="resultSection" class="result-section hidden"></div>
+
+        <!-- قسم إعادة المحاولة -->
+        <div id="againSection" class="again-section hidden">
+            <p>Would you like to enter another symbol?</p>
+            <div class="again-buttons">
+                <button onclick="restart()">✅ Yes</button>
+                <button onclick="stop()">❌ No</button>
+            </div>
+        </div>
+
+        <!-- قسم رسالة الشكر -->
+        <div id="thankYouSection" class="thank-you hidden">
+            Thanks for using the Periodic Table Explorer 👋
+        </div>
+    </div>
+
+    <!-- رابط ملف JavaScript الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
